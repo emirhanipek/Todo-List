@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title><%= title %></title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+            background-size: cover;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+        .login-container {
+            margin-top: 100px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .login-btn {
+            background-color: #6a82fb;
+            color: white;
+        }
+        .login-btn:hover {
+            background-color: #5b7fdb;
+            color: white;
+        }
+        .social-icons i {
+            margin: 10px;
+            font-size: 20px;
+            color: #6a82fb;
+            transition: color 0.3s;
+        }
+        .social-icons i:hover {
+            color: #fc5c7d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 login-container">
+                <h2 class="text-center">Giriş Yap</h2>
+                <form method="POST">
+                    <div class="form-group">
+                        <label for="email">E-posta</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="E-posta girin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Şifre</label>
+                        <input type="password" name="pass" class="form-control" id="password" placeholder="Şifre girin" required>
+                    </div>
+                    <button type="submit" class="btn btn-block login-btn">Giriş Yap</button>
+                </form>
+                <hr>
+                <div class="text-center">
+                    <p>Ya da</p>
+
+                    <a href="/register"><p>Henüz Kayıt Değilsen Kayıt Ol</p></a>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-google-plus-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
